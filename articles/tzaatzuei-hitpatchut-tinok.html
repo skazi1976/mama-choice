@@ -31,7 +31,7 @@ body{font-family:'Assistant','Segoe UI',sans-serif;background:#fff;color:#2D2D2D
 h1,h2,h3,h4{font-family:'Heebo','Segoe UI',sans-serif;font-weight:700;}
 
 /* Navbar */
-nav{background:#fff;padding:15px 30px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;border-bottom:1px solid rgba(232,160,191,0.2);}
+nav{background:#fff;padding:15px 30px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;border-bottom:1px solid rgba(232,160,191,0.2);position:sticky;top:0;z-index:100;backdrop-filter:blur(10px);}
 nav a.logo{text-decoration:none;font-size:1.5em;font-weight:800;color:#C77DA0;font-family:'Heebo',sans-serif;display:flex;align-items:center;gap:8px;}
 nav a.logo span{color:#6BB8C7;}
 nav .nav-links{display:flex;gap:20px;flex-wrap:wrap;list-style:none;}
@@ -89,6 +89,8 @@ footer p{color:rgba(255,255,255,0.6);font-size:0.88em;margin-bottom:8px;}
   .cta-button{font-size:1em;padding:14px;}
   .related-grid{grid-template-columns:1fr;}
   nav .nav-links{display:none;}
+  .menu-toggle{display:block;}
+  nav .nav-links.active{display:flex;flex-direction:column;width:100%;padding-top:15px;}
 }
 </style>
 </head>
@@ -104,6 +106,7 @@ footer p{color:rgba(255,255,255,0.6);font-size:0.88em;margin-bottom:8px;}
 <li><a href="../about.html">אודות</a></li>
 <li><a href="../contact.html">צרו קשר</a></li>
 </ul>
+<button class="menu-toggle" aria-label="תפריט">&#9776;</button>
 </nav>
 
 <div class="article-hero">
@@ -113,7 +116,7 @@ footer p{color:rgba(255,255,255,0.6);font-size:0.88em;margin-bottom:8px;}
 </div>
 
 <div class="container">
-<a href="../index.html" class="back-link">&#8592; חזרה ל-MamaChoice</a>
+<a href="../categories/toys.html" class="back-link">&#8592; חזרה לקטגוריית צעצועים</a>
 
 <div class="intro">
 <p>צעצועי התפתחות הם הרבה יותר מסתם משחק. הם כלי חינוכי חשוב שמעודד את התינוק לפתח מוטוריקה עדינה וגסה, חושים, קשב וריכוז. צעצועי מונטסורי, למשל, מעודדים למידה עצמאית ופיתוח יצירתיות מגיל צעיר.</p>
@@ -234,17 +237,17 @@ footer p{color:rgba(255,255,255,0.6);font-size:0.88em;margin-bottom:8px;}
 <div class="related-articles">
 <h2>&#128218; מדריכים נוספים</h2>
 <div class="related-grid">
-<a href="mutzrei-sheina-letinok.html" class="related-card">
-<h3>&#128164; מוצרי שינה לתינוק</h3>
-<p>7 מוצרי שינה מומלצים - מכונות רעש לבן, שמיכות עיטוף ומנורות לילה</p>
+<a href="tzaatzuei-montessori-letinok.html" class="related-card">
+<h3>&#127807; 7 צעצועי מונטסורי - קוביות פעילות, מגדלי השחלה ומיון צורות</h3>
+<p>צעצועי עץ מונטסורי מומלצים שמפתחים מוטוריקה וחשיבה לוגית</p>
 </a>
-<a href="mutzrei-haachala-letinok.html" class="related-card">
-<h3>&#127868; מוצרי האכלה לתינוק</h3>
-<p>10 מוצרי האכלה מומלצים - סינרי סיליקון, מוצצי פירות וצלחות עם ואקום</p>
+<a href="tzaatzuim-letinok-ben-chatzi-shana.html" class="related-card">
+<h3>&#128118; צעצועים לגיל חצי שנה - רעשנים, נשכנים וצעצועים חושיים</h3>
+<p>צעצועים מותאמים בדיוק לשלב ההתפתחות של גיל 6 חודשים</p>
 </a>
-<a href="gadgetim-chakaim-lehorim.html" class="related-card">
-<h3>&#128241; גאדג'טים חכמים להורים</h3>
-<p>10 גאדג'טים חכמים - מדי חום, מצלמות תינוק, שואבי אף וגוזזי ציפורניים</p>
+<a href="tzaatzuim-letinok-ben-shana.html" class="related-card">
+<h3>&#127880; צעצועים לגיל שנה - שולחנות מוזיקה, עגלות דחיפה ופאזלים</h3>
+<p>צעצועים מומלצים לפעוט בן שנה שמתחיל ללכת ולחקור</p>
 </a>
 </div>
 </div>
@@ -254,5 +257,9 @@ footer p{color:rgba(255,255,255,0.6);font-size:0.88em;margin-bottom:8px;}
 <p>&copy; 2026 MamaChoice. כל הזכויות שמורות.</p>
 <p class="disclosure">האתר מכיל קישורי אפילייט. כאשר אתם רוכשים דרך הקישורים שלנו, אנחנו עשויים לקבל עמלה קטנה - ללא עלות נוספת עבורכם.</p>
 </footer>
+<script>
+var t=document.querySelector('.menu-toggle'),n=document.querySelector('.nav-links');
+t.addEventListener('click',function(){n.classList.toggle('active');t.textContent=n.classList.contains('active')?'\u2715':'\u2630';});
+</script>
 </body>
 </html>
