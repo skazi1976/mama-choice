@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://skazi1976.github.io/mama-choice/sitemap.xml
