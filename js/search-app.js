@@ -7,7 +7,7 @@
 //  Configuration
 // ============================================================
 
-const API_BASE = "https://mamachoice-api.ohadf1976.workers.dev";
+const API_BASE = "https://ali-findme-api.ohadf1976.workers.dev";
 // For local testing, change to: "http://localhost:8787"
 
 let currentLang = localStorage.getItem("mc-lang") || "he";
