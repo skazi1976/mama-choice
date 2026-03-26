@@ -302,7 +302,8 @@ async function searchByImage() {
         image: uploadedImage.dataUrl,
         lang: currentLang,
         currency: "ILS",
-        country: "IL"
+        country: "IL",
+        source: "baby"
       })
     });
 
@@ -351,7 +352,9 @@ async function doSearch(query) {
       lang: currentLang,
       currency: "ILS",
       country: "IL",
-      page: "1"
+      page: "1",
+      source: "baby",
+      context: "baby"
     });
 
     const res = await fetch(`${API_BASE}/search?${params}`);
