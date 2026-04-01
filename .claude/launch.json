@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "mama-choice-dev",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["http-server", "D:/yupoo/mama-choice-repo", "-p", "3000", "-c-1", "--cors"],
+      "port": 3000
+    }
+  ]
+}
