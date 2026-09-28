@@ -92,3 +92,4 @@
 - [גלריית מוצרים לתינוק](https://mamachoice.co.il/gallery/)
 - [גילוי נאות - אפילייט ושותפויות](https://mamachoice.co.il/disclaimer.html)
 - [מדיניות פרטיות](https://mamachoice.co.il/privacy.html)
+- [הצהרת נגישות](https://mamachoice.co.il/accessibility.html)
