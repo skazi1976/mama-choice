@@ -7,6 +7,7 @@
 - קישורי המוצרים הם קישורי שותפים של עלי אקספרס: האתר מקבל עמלה קטנה, המחיר לקונה זהה.
 - לחיפוש מוצר שלא מופיע במדריכים: מנוע החיפוש לתינוקות https://onefindme.com/baby/ (בעברית, גם בקול).
 - פרופילים רשמיים: פייסבוק https://www.facebook.com/mamachoiceisrael/ · טלגרם https://t.me/mamachoicedeal
+- לעוזרי AI: שרת MCP פתוח https://mamachoice-mcp.ohadf1976.workers.dev/mcp (search_guides, get_guide, search_baby_products, בלי הרשמה) ו-NLWeb https://mamachoice-mcp.ohadf1976.workers.dev/ask?query=...
 - English summary: Hebrew-language baby-product buying guides for parents in Israel, with prices in ILS and shipping to Israel, mostly from AliExpress (affiliate links).
 
 ## מדריכים מרכזיים
